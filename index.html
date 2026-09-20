@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ευ Ζην Fitness | Αρχική</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <div class="nav-wrap">
+    <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="Ευ Ζην Fitness λογότυπο">
+    </a>
+    <button class="nav-toggle" onclick="document.querySelector('nav ul').classList.toggle('open')">☰</button>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="active">Αρχική</a></li>
+        <li><a href="packages.html">Πακέτα</a></li>
+        <li><a href="services.html">Υπηρεσίες</a></li>
+        <li><a href="gyms.html">Γυμναστήρια</a></li>
+        <li><a href="bio.html">Βιογραφικό</a></li>
+        <li><a href="contact.html">Επικοινωνία</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Καλώς ήρθες στο Ευ Ζην Fitness</h1>
+  <p>Pilates reformer &amp; group fitness training σε δύο σύγχρονα γυμναστήρια. Βρες το πρόγραμμα που ταιριάζει στον δικό σου ρυθμό.</p>
+  <a href="packages.html" class="btn">Δες τα πακέτα συνδρομών</a>
+</section>
+
+<section class="philosophy">
+  <div class="phil-carousel" id="philCarousel">
+
+    <div class="phil-slide active">
+      <span class="phil-num">01</span>
+      <h2 class="phil-big">Η άσκηση είναι παιδεία.</h2>
+      <span class="phil-tag">Η ΦΙΛΟΣΟΦΙΑ ΜΑΣ</span>
+    </div>
+
+    <div class="phil-slide">
+      <span class="phil-num">02</span>
+      <h3>Το ΕΥ ΖΗΝ γεννήθηκε από μια διαχρονική ελληνική ιδέα.</h3>
+      <p>Οι αρχαίοι Έλληνες πίστευαν ότι η κίνηση καλλιεργεί το σώμα, τον νου και τον χαρακτήρα.</p>
+      <p>Για εμάς, η άσκηση δεν είναι απλώς προπόνηση. Είναι τρόπος ζωής.</p>
+    </div>
+
+    <div class="phil-slide">
+      <span class="phil-num">03</span>
+      <h3>Η φιλοσοφία μας</h3>
+      <ul class="phil-list">
+        <li>Ποιοτική κίνηση</li>
+        <li>Ισορροπία σώματος &amp; νου</li>
+        <li>Συνειδητή άσκηση</li>
+        <li>Ευεξία με διάρκεια</li>
+      </ul>
+    </div>
+
+    <div class="phil-slide">
+      <span class="phil-num">04</span>
+      <h3>Πίσω από το έργο μας</h3>
+      <p>Η Αλίκη είναι πτυχιούχος ΤΕΦΑΑ με:</p>
+      <ul class="phil-list">
+        <li>Μεταπτυχιακό στην Κοινωνιολογία, Ιστορία &amp; Ανθρωπολογία του Αθλητισμού</li>
+        <li>Ειδικότητα στην Ειδική Φυσική Αγωγή &amp; Θεραπευτική Γυμναστική</li>
+      </ul>
+    </div>
+
+    <div class="phil-slide">
+      <span class="phil-num">05</span>
+      <h3>Συνεχής εξειδίκευση</h3>
+      <ul class="phil-list">
+        <li>Pilates Instructor</li>
+        <li>Yoga Instructor</li>
+        <li>Personal Trainer</li>
+      </ul>
+      <p>Η επιστημονική γνώση συναντά την εμπειρία και τη σωστή καθοδήγηση.</p>
+    </div>
+
+    <div class="phil-slide">
+      <span class="phil-num">06</span>
+      <h3>Στο ΕΥ ΖΗΝ κάθε συνεδρία έχει σκοπό.</h3>
+      <ul class="phil-list">
+        <li>Να κινείσαι σωστά.</li>
+        <li>Να δυναμώνεις με ασφάλεια.</li>
+        <li>Να γνωρίζεις καλύτερα το σώμα σου.</li>
+      </ul>
+    </div>
+
+    <div class="phil-slide">
+      <span class="phil-num">07</span>
+      <h3>Μια σύγχρονη συνέχεια της σοφίας των προγόνων μας.</h3>
+      <ul class="phil-list">
+        <li>Να ζεις με ποιότητα.</li>
+        <li>Να κινείσαι με νόημα.</li>
+        <li>Να εξελίσσεσαι καθημερινά.</li>
+      </ul>
+    </div>
+
+    <div class="phil-slide">
+      <span class="phil-num">08</span>
+      <h3 class="phil-big-sm">Η ευεξία δεν είναι προορισμός.</h3>
+      <p>Είναι επιλογή που κάνεις κάθε μέρα.</p>
+    </div>
+
+  </div>
+
+  <div class="phil-dots" id="philDots"></div>
+</section>
+
+<div class="container">
+  <h2 class="section-title">Γιατί Ευ Ζην Fitness</h2>
+  <p class="section-sub">Εξατομικευμένη προπόνηση, μικρές ομάδες και έμπειροι προπονητές — σε δύο σημεία, κοντά σου.</p>
+  <div class="grid">
+    <div class="card">
+      <div class="icon">🧘‍♀️</div>
+      <h3>Pilates Reformer</h3>
+      <p>Sessions σε μικρές ομάδες, με στοχευμένη καθοδήγηση σε κάθε άσκηση.</p>
+    </div>
+    <div class="card">
+      <div class="icon">🏋️‍♀️</div>
+      <h3>Group Training</h3>
+      <p>Ομαδικά μαθήματα functional trainning και pilates mat για κάθε επίπεδο.</p>
+    </div>
+    <div class="card">
+      <div class="icon">📍</div>
+      <h3>Δύο Γυμναστήρια</h3>
+      <p>Επίλεξε το κατάστημα που σου ταιριάζει — δες ωράρια και τοποθεσίες.</p>
+    </div>
+  </div>
+</div>
+
+<div class="container" style="padding-top:0;">
+  <h2 class="section-title">Έτοιμη/ος να ξεκινήσεις;</h2>
+  <p class="section-sub">Δες τα πακέτα συνδρομών μας ή επικοινώνησε μαζί μας για να κλείσεις το πρώτο σου μάθημα.</p>
+  <div style="text-align:center; display:flex; gap:16px; justify-content:center; flex-wrap:wrap;">
+    <a href="packages.html" class="btn">Πακέτα Συνδρομών</a>
+    <a href="contact.html" class="btn btn-outline">Επικοινωνία</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-wrap">
+    <div class="fcol">
+      <h4>Σύνδεσμοι</h4>
+      <a href="packages.html">Πακέτα</a>
+      <a href="services.html">Υπηρεσίες</a>
+      <a href="gyms.html">Γυμναστήρια</a>
+      <a href="contact.html">Επικοινωνία</a>
+    </div>
+    <div class="fcol">
+      <h4>Ευ Ζην Exclusive Fitness</h4>
+      <p>📍 Μπουμπουλίνας 48, Πετρούπολη</p>
+      <p>📞 210-5060111</p>
+    </div>
+    <div class="fcol">
+      <h4>Ευ Ζην Mind. Body. Balance.</h4>
+      <p>📍 Αθανασίου Διάκου 108, Πετρούπολη</p>
+      <p>📞 210-5060222</p>
+    </div>
+  </div>
+  <div class="social-row">
+  <a href="mailto:euzinfitness@gmail.com" aria-label="Email" class="social-icon">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+      <path d="M2 5.5C2 4.67 2.67 4 3.5 4h17c.83 0 1.5.67 1.5 1.5v13c0 .83-.67 1.5-1.5 1.5h-17C2.67 20 2 19.33 2 18.5v-13zm2 .4v.3l8 6 8-6v-.3H4zm16 2.3l-7.4 5.55a1 1 0 0 1-1.2 0L4 8.2V18h16V8.2z"/>
+    </svg>
+  </a>
+  <a href="https://instagram.com/euzin_fitness" target="_blank" rel="noopener" aria-label="Instagram" class="social-icon">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+      <path d="M12 2.2c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41-.56-.22-.96-.48-1.38-.9-.42-.42-.68-.82-.9-1.38-.16-.42-.36-1.06-.41-2.23C2.21 15.58 2.2 15.2 2.2 12s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.21 8.8 2.2 12 2.2zm0 1.8c-3.14 0-3.5.01-4.73.07-.96.04-1.48.2-1.83.34-.46.18-.79.39-1.13.74-.35.34-.56.67-.74 1.13-.14.35-.3.87-.34 1.83C3.17 8.5 3.16 8.86 3.16 12s.01 3.5.07 4.73c.04.96.2 1.48.34 1.83.18.46.39.79.74 1.13.34.35.67.56 1.13.74.35.14.87.3 1.83.34 1.23.06 1.59.07 4.73.07s3.5-.01 4.73-.07c.96-.04 1.48-.2 1.83-.34.46-.18.79-.39 1.13-.74.35-.34.56-.67.74-1.13.14-.35.3-.87.34-1.83.06-1.23.07-1.59.07-4.73s-.01-3.5-.07-4.73c-.04-.96-.2-1.48-.34-1.83-.18-.46-.39-.79-.74-1.13a3.02 3.02 0 0 0-1.13-.74c-.35-.14-.87-.3-1.83-.34C15.5 4.01 15.14 4 12 4zm0 3.6a4.4 4.4 0 1 1 0 8.8 4.4 4.4 0 0 1 0-8.8zm0 1.8a2.6 2.6 0 1 0 0 5.2 2.6 2.6 0 0 0 0-5.2zm4.6-2a1.03 1.03 0 1 1 0 2.06 1.03 1.03 0 0 1 0-2.06z"/>
+    </svg>
+  </a>
+  <a href="https://facebook.com/euzinexclusivefitness" target="_blank" rel="noopener" aria-label="Facebook" class="social-icon">
+    <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+      <path d="M13.5 21v-7.5h2.5l.4-3H13.5V8.4c0-.87.24-1.46 1.5-1.46h1.6V4.3c-.28-.04-1.22-.12-2.32-.12-2.3 0-3.88 1.4-3.88 3.98v2.22H8v3h2.4V21h3.1z"/>
+    </svg>
+  </a>
+</div>
+
+  <div class="footer-bottom">© 2026 Ευ Ζην Fitness. Με επιφύλαξη παντός δικαιώματος.</div>
+</footer>
+
+<script>
+    const slides = document.querySelectorAll('.phil-slide');
+    const dotsWrap = document.getElementById('philDots');
+    let current = 0;
+    let timer;
+
+    slides.forEach((_, i) => {
+        const dot = document.createElement('button');
+        dot.className = 'phil-dot' + (i === 0 ? ' active' : '');
+        dot.addEventListener('click', () => goTo(i));
+        dotsWrap.appendChild(dot);
+    });
+    const dots = document.querySelectorAll('.phil-dot');
+
+    function goTo(index) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        current = index;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+        resetTimer();
+    }
+
+    function next() {
+        goTo((current + 1) % slides.length);
+    }
+
+    function resetTimer() {
+        clearInterval(timer);
+        timer = setInterval(next, 5000);
+    }
+
+    resetTimer();
+</script>
+
+</body>
+</html>
