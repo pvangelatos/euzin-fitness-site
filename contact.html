@@ -56,24 +56,27 @@
       </div>
     </div>
 
-    <div class="contact-card">
+        <div class="contact-card">
       <h3>Στείλε μας μήνυμα</h3>
-      <form onsubmit="alert('Ευχαριστούμε! Θα επικοινωνήσουμε σύντομα.'); return false;">
+      <form action="https://formspree.io/f/mqpaqwpw" method="POST">
         <label for="name">Ονοματεπώνυμο</label>
-        <input type="text" id="name" required>
+        <input type="text" id="name" name="name" required>
 
         <label for="email">Email</label>
-        <input type="email" id="email" required>
+        <input type="email" id="email" name="email" required>
 
         <label for="gym">Κατάστημα ενδιαφέροντος</label>
         <select id="gym" name="gym" required>
-        <option value="" disabled selected>Επίλεξε γυμναστήριο</option>
-        <option value="Κατάστημα 1">Ευ Ζην Exclusive Fitness, Μπουμπουλίνας 48 Πετρούπολη</option>
-        <option value="Κατάστημα 2">Ευ Ζην Mind. Body. Balance., Αθ. Διάκου 108, Πετρούπολη</option>
+          <option value="" disabled selected>Επίλεξε γυμναστήριο</option>
+          <option value="Κατάστημα 1">Ευ Ζην Exclusive Fitness, Μπουμπουλίνας 48 Πετρούπολη</option>
+          <option value="Κατάστημα 2">Ευ Ζην Mind. Body. Balance., Αθ. Διάκου 108, Πετρούπολη</option>
         </select>
 
         <label for="message">Μήνυμα</label>
-        <textarea id="message" required></textarea>
+        <textarea id="message" name="message" required></textarea>
+
+        <input type="hidden" name="_subject" value="Νέο μήνυμα από euzinfitness.gr">
+        <input type="text" name="_gotcha" style="display:none">
 
         <br><br>
         <button type="submit" class="btn" style="border:none; cursor:pointer;">Αποστολή</button>
