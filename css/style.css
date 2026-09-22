@@ -55,7 +55,7 @@ header {
   color: var(--sand-700);
 }
 
-.logo img { height: 50px; width: auto; }
+.logo img { height: 62px; width: auto; }
 
 nav ul {
   list-style: none;
@@ -67,7 +67,7 @@ nav ul {
 
 nav a {
   font-weight: 600;
-  font-size: .98rem;
+  font-size: 1.08rem;
   color: var(--ink-soft);
   padding: 6px 2px;
   border-bottom: 2px solid transparent;
@@ -614,7 +614,7 @@ footer .fcol p, .fcol a {
     padding: 10px 16px;
   }
   .logo img {
-    height: 38px;
+    height: 46px;
   }
   .nav-toggle {
     font-size: 1.4rem;
