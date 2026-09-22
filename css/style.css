@@ -395,6 +395,16 @@ footer .fcol p, .fcol a {
   color: var(--sand-300);
 }
 
+.ficon-line {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.ficon {
+  flex-shrink: 0;
+}
+
 /* Responsive */
 @media (max-width: 780px) {
   nav ul {
