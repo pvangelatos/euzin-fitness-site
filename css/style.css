@@ -365,6 +365,14 @@ footer {
   gap: 32px;
 }
 
+@media (max-width: 700px) {
+  .footer-wrap{
+    grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: left;
+  }
+}
+
 footer a { color: var(--sand-100); }
 footer a:hover { color: var(--white); }
 footer .fcol h4 {
@@ -576,4 +584,16 @@ footer .fcol p, .fcol a {
   background: var(--sand-500);
   color: var(--white);
   transform: translateY(-2px);
+}
+
+@media (max-width: 480px) {
+  .nav-wrap {
+    padding: 10px 16px;
+  }
+  .logo img {
+    height: 38px;
+  }
+  .nav-toggle {
+    font-size: 1.4rem;
+  }
 }
