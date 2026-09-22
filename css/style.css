@@ -407,9 +407,22 @@ footer .fcol p, .fcol a {
 
 /* Responsive */
 @media (max-width: 780px) {
+  .nav-wrap {
+    position: relative;
+    justify-content: center;
+  }
+  .logo {
+    margin: 0 auto;
+  }
+  .nav-toggle {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
   nav ul {
     position: absolute;
-    top: 70px;
+    top: 100%;
     left: 0;
     right: 0;
     background: var(--white);
