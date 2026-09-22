@@ -56,9 +56,9 @@
       </div>
     </div>
 
-        <div class="contact-card">
+    <div class="contact-card">
       <h3>Στείλε μας μήνυμα</h3>
-      <form action="https://formspree.io/f/mqpaqwpw" method="POST">
+      <form id="contactForm" action="https://formspree.io/f/mqpaqwpw" method="POST">
         <label for="name">Ονοματεπώνυμο</label>
         <input type="text" id="name" name="name" required>
 
@@ -79,8 +79,14 @@
         <input type="text" name="_gotcha" style="display:none">
 
         <br><br>
-        <button type="submit" class="btn" style="border:none; cursor:pointer;">Αποστολή</button>
+        <button type="submit" class="btn" id="contactSubmitBtn" style="border:none; cursor:pointer;">Αποστολή</button>
       </form>
+      <p id="contactSuccessMsg" style="display:none; color: var(--sand-600); font-weight:600; margin-top:16px;">
+        ✓ Ευχαριστούμε! Το μήνυμά σου στάλθηκε — θα επικοινωνήσουμε σύντομα.
+      </p>
+      <p id="contactErrorMsg" style="display:none; color:#b33; font-weight:600; margin-top:16px;">
+        Κάτι πήγε στραβά. Δοκίμασε ξανά ή στείλε μας email απευθείας στο euzinfitness@gmail.com.
+      </p>
     </div>
 
   </div>
@@ -127,5 +133,40 @@
   <div class="footer-bottom">© 2026 Ευ Ζην Fitness. Με επιφύλαξη παντός δικαιώματος.</div>
 </footer>
 
+<script>
+  const contactForm = document.getElementById('contactForm');
+  const submitBtn = document.getElementById('contactSubmitBtn');
+  const successMsg = document.getElementById('contactSuccessMsg');
+  const errorMsg = document.getElementById('contactErrorMsg');
+
+  contactForm.addEventListener('submit', function (e) {
+    e.preventDefault();
+    successMsg.style.display = 'none';
+    errorMsg.style.display = 'none';
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Αποστολή...';
+
+    fetch(contactForm.action, {
+      method: 'POST',
+      body: new FormData(contactForm),
+      headers: { 'Accept': 'application/json' }
+    })
+      .then(response => {
+        if (response.ok) {
+          contactForm.reset();
+          successMsg.style.display = 'block';
+        } else {
+          errorMsg.style.display = 'block';
+        }
+      })
+      .catch(() => {
+        errorMsg.style.display = 'block';
+      })
+      .finally(() => {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Αποστολή';
+      });
+  });
+</script>
 </body>
 </html>
